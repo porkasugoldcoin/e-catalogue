@@ -7,6 +7,7 @@ interface ProductContextType {
   updateProduct: (id: string, product: Partial<Product>) => void;
   deleteProduct: (id: string) => void;
   getProduct: (id: string) => Product | undefined;
+  resetToDefaults: () => void;
 }
 
 export const ProductContext = createContext<ProductContextType | undefined>(undefined);
@@ -80,19 +81,19 @@ export const ProductProvider: React.FC<{ children: React.ReactNode }> = ({ child
 
   // Load products from localStorage on mount
   useEffect(() => {
-    const savedProducts = localStorage.getItem('techcorp-products');
+    const savedProducts = localStorage.getItem('great-hardwares-products');
     if (savedProducts) {
       setProducts(JSON.parse(savedProducts));
     } else {
       setProducts(defaultProducts);
-      localStorage.setItem('techcorp-products', JSON.stringify(defaultProducts));
+      localStorage.setItem('great-hardwares-products', JSON.stringify(defaultProducts));
     }
   }, []);
 
   // Save products to localStorage whenever products change
   useEffect(() => {
     if (products.length > 0) {
-      localStorage.setItem('techcorp-products', JSON.stringify(products));
+      localStorage.setItem('great-hardwares-products', JSON.stringify(products));
     }
   }, [products]);
 
@@ -122,13 +123,20 @@ export const ProductProvider: React.FC<{ children: React.ReactNode }> = ({ child
     return products.find(product => product.id === id);
   };
 
+  const resetToDefaults = () => {
+    localStorage.removeItem('great-hardwares-products');
+    setProducts(defaultProducts);
+    localStorage.setItem('great-hardwares-products', JSON.stringify(defaultProducts));
+  };
+
   return (
     <ProductContext.Provider value={{
       products,
       addProduct,
       updateProduct,
       deleteProduct,
-      getProduct
+      getProduct,
+      resetToDefaults
     }}>
       {children}
     </ProductContext.Provider>

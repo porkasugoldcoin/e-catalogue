@@ -4,7 +4,7 @@ import { useProducts } from '../hooks/useProducts';
 import { Product } from '../types/Product';
 
 const Admin = () => {
-  const { products, addProduct, updateProduct, deleteProduct } = useProducts();
+  const { products, addProduct, updateProduct, deleteProduct, resetToDefaults } = useProducts();
   const [showForm, setShowForm] = useState(false);
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [formData, setFormData] = useState({
@@ -106,13 +106,21 @@ const Admin = () => {
               <h1 className="text-3xl font-bold text-gray-900">Product Management</h1>
               <p className="text-gray-600 mt-2">Manage your product catalog and brochures</p>
             </div>
-            <button
-              onClick={() => setShowForm(true)}
-              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-            >
-              <Plus className="h-5 w-5 mr-2" />
-              Add New Product
-            </button>
+            <div className="flex space-x-3">
+              <button
+                onClick={resetToDefaults}
+                className="inline-flex items-center px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors font-medium"
+              >
+                Reset to Defaults
+              </button>
+              <button
+                onClick={() => setShowForm(true)}
+                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+              >
+                <Plus className="h-5 w-5 mr-2" />
+                Add New Product
+              </button>
+            </div>
           </div>
         </div>
 
