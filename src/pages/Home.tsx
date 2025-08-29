@@ -36,7 +36,7 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div className="py-20 bg-white">
+      <div className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -52,7 +52,7 @@ const Home = () => {
       </div>
 
       {/* Products Section */}
-      <div className="py-20 bg-gray-50">
+      <div className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -63,8 +63,20 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+            {/* Grid Lines */}
+            <div className="absolute inset-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pointer-events-none">
+              <div className="border-r border-orange-200 border-b border-orange-200 rounded-br-xl"></div>
+              <div className="border-r border-red-200 border-b border-red-200 rounded-br-xl md:block hidden"></div>
+              <div className="border-r border-blue-200 border-b border-blue-200 rounded-br-xl lg:block hidden"></div>
+              <div className="border-b border-green-200 rounded-br-xl lg:block hidden"></div>
+              <div className="border-r border-orange-200 border-b border-orange-200 rounded-br-xl"></div>
+              <div className="border-r border-red-200 border-b border-red-200 rounded-br-xl md:block hidden"></div>
+              <div className="border-r border-blue-200 border-b border-blue-200 rounded-br-xl lg:block hidden"></div>
+              <div className="border-b border-green-200 rounded-br-xl lg:block hidden"></div>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center relative z-10 border-2 border-orange-200">
               <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Wrench className="h-8 w-8 text-orange-600" />
               </div>
@@ -74,7 +86,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center relative z-10 border-2 border-red-200">
               <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8 text-red-600" />
               </div>
@@ -84,7 +96,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center relative z-10 border-2 border-blue-200">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Truck className="h-8 w-8 text-blue-600" />
               </div>
@@ -94,7 +106,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center relative z-10 border-2 border-green-200">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="h-8 w-8 text-green-600" />
               </div>
@@ -119,8 +131,18 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+            {/* Grid Lines */}
+            <div className="absolute inset-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pointer-events-none">
+              <div className="border-r border-orange-200 border-b border-orange-200 rounded-br-xl"></div>
+              <div className="border-r border-red-200 border-b border-red-200 rounded-br-xl md:block hidden"></div>
+              <div className="border-b border-blue-200 rounded-br-xl lg:block hidden"></div>
+              <div className="border-r border-orange-200 border-b border-orange-200 rounded-br-xl"></div>
+              <div className="border-r border-red-200 border-b border-red-200 rounded-br-xl md:block hidden"></div>
+              <div className="border-b border-blue-200 rounded-br-xl lg:block hidden"></div>
+            </div>
+            
+            <div className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow relative z-10 border-2 border-orange-200 bg-white">
               <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="h-8 w-8 text-orange-600" />
               </div>
@@ -130,7 +152,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+            <div className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow relative z-10 border-2 border-red-200 bg-white">
               <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-red-600" />
               </div>
@@ -140,7 +162,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+            <div className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow relative z-10 border-2 border-blue-200 bg-white">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="h-8 w-8 text-blue-600" />
               </div>
