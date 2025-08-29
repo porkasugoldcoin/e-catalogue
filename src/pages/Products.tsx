@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Download, Star, ArrowRight } from 'lucide-react';
 import { useBrochure } from '../hooks/useBrochure';
 import { useProducts } from '../hooks/useProducts';
@@ -86,10 +87,13 @@ const Products = () => {
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Our team of hardware experts can provide tailored solutions that perfectly match your specific project requirements.
           </p>
-          <button className="inline-flex items-center px-8 py-3 bg-[#3B82F6] text-white rounded-lg hover:bg-[#2563EB] transition-colors font-semibold">
+          <Link
+            to="/contact"
+            className="inline-flex items-center px-8 py-3 bg-[#3B82F6] text-white rounded-lg hover:bg-[#2563EB] transition-colors font-semibold"
+          >
             Contact Our Experts
             <ArrowRight className="ml-2 h-5 w-5" />
-          </button>
+          </Link>
         </div>
       </div>
 
