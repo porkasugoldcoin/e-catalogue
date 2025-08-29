@@ -32,9 +32,11 @@ jobs:
       - name: Build application
         run: npm run build
         
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+        
       - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: '--prod'
+        run: |
+          vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
+        env:
+          VERCEL_USER_ID: 3DpD4cqikicuSIydlXYRJ4BZ

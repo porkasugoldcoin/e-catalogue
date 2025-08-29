@@ -58,16 +58,14 @@ This project is configured for automatic deployment to Vercel using GitHub Actio
    - Click "New Project" and import your GitHub repository
    - Deploy once manually to get the project configuration
 
-3. **Get Vercel credentials:**
-   - **Vercel Token**: Go to Vercel Account Settings → Tokens → Create new token
-   - **Project ID**: Found in your Vercel project settings or URL (format: `prj_xxxxxxxxxx`)
+3. **Get Vercel token:**
+   - Go to Vercel Account Settings → Tokens → Create new token
 
-4. **Add GitHub Secrets:**
+4. **Add GitHub Secret:**
    - Go to your GitHub repository
    - Navigate to Settings → Secrets and variables → Actions
-   - Add these secrets:
+   - Add this secret:
      - `VERCEL_TOKEN`: Your Vercel API token
-     - `VERCEL_PROJECT_ID`: Your Vercel Project ID
 
 ### Automatic Deployment
 
