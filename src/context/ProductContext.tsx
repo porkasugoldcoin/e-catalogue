@@ -21,7 +21,7 @@ const defaultProducts: Product[] = [
     description: 'Durable, rust-resistant hinges for doors, cabinets, and enclosures.',
     features: ['Grade 304/316', 'Multiple sizes', 'Rust-proof', 'Smooth operation'],
     price: '',
-    image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'https://www.msthardware.in/wp-content/uploads/2023/04/stainless-steel-hinges-3x12-1-scaled.webp',
     brochureFile: 'StainlessSteelHinges.pdf',
     createdAt: '2024-01-01T00:00:00Z',
     updatedAt: '2024-01-01T00:00:00Z'
@@ -33,7 +33,7 @@ const defaultProducts: Product[] = [
     description: 'Strong bolts, nuts, and washers built to standards.',
     features: ['Grades 8.8 / 10.9 / 12.9', 'Metric & imperial sizes', 'Multiple finishes', 'Tested durability'],
     price: '',
-    image: 'https://images.pexels.com/photos/162553/pexels-photo-162553.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'https://5.imimg.com/data5/RH/KF/MY-21783657/high-tensile-fasteners-500x500.jpg',
     brochureFile: 'HighTensileBolts.pdf',
     createdAt: '2024-01-01T00:00:00Z',
     updatedAt: '2024-01-01T00:00:00Z'
@@ -45,7 +45,7 @@ const defaultProducts: Product[] = [
     description: 'Handles, knobs, and latches for home and industry.',
     features: ['Ergonomic designs', 'Multiple finishes', 'Easy install kits', 'Brand compatible'],
     price: '',
-    image: 'https://images.pexels.com/photos/162553/pexels-photo-162553.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'https://m.media-amazon.com/images/I/81pA0u-WeHL.jpg',
     brochureFile: 'DoorCabinetHardware.pdf',
     createdAt: '2024-01-01T00:00:00Z',
     updatedAt: '2024-01-01T00:00:00Z'
@@ -57,7 +57,7 @@ const defaultProducts: Product[] = [
     description: 'Heavy-duty brackets for shelves, frames, and equipment.',
     features: ['High load capacity', 'Pre-drilled holes', 'Powder-coated/galvanized', 'Custom sizes'],
     price: '',
-    image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'https://m.media-amazon.com/images/I/71y-a4Rqj5S._UF894,1000_QL80_.jpg',
     brochureFile: 'IndustrialBrackets.pdf',
     createdAt: '2024-01-01T00:00:00Z',
     updatedAt: '2024-01-01T00:00:00Z'
@@ -69,7 +69,7 @@ const defaultProducts: Product[] = [
     description: 'Tailored metal parts for assemblies and production lines.',
     features: ['CAD support', 'Prototype to production', 'SS / MS / Aluminum', 'QA reports'],
     price: '',
-    image: 'https://images.pexels.com/photos/162553/pexels-photo-162553.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'https://image.made-in-china.com/365f3j00KELsiqDhEOoV/Custom-Small-Sheet-Metal-Parts-Fabrication-with-Stainless-Steel-Laser-Cutting-Bending-Welding-Sheet-Metal-Products.webp',
     brochureFile: 'CustomFabrication.pdf',
     createdAt: '2024-01-01T00:00:00Z',
     updatedAt: '2024-01-01T00:00:00Z'
