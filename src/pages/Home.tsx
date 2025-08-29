@@ -7,26 +7,26 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-orange-600 to-red-600 text-white">
+      <div className="bg-[#2F3A45] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               [Client's Hardware Business Name]
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-orange-100 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
               Trusted supplier of hinges, bolts, and hardware accessories.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/products"
-                className="inline-flex items-center px-8 py-4 bg-white text-orange-600 rounded-lg hover:bg-gray-100 transition-colors font-semibold text-lg shadow-lg"
+                className="inline-flex items-center px-8 py-4 bg-[#3B82F6] text-white rounded-lg hover:bg-[#2563EB] transition-colors font-semibold text-lg shadow-lg"
               >
                 View Products
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 to="/contact"
-                className="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-orange-600 transition-colors font-semibold text-lg"
+                className="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#2F3A45] transition-colors font-semibold text-lg"
               >
                 Contact Us Today
               </Link>
@@ -154,17 +154,17 @@ const Home = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gray-900 text-white py-16">
+      <div className="bg-[#2F3A45] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Contact Us Today for Your Hardware Needs
           </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Get in touch with us to discuss your hardware requirements and receive expert advice.
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center px-8 py-4 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors font-semibold text-lg"
+            className="inline-flex items-center px-8 py-4 bg-[#3B82F6] text-white rounded-lg hover:bg-[#2563EB] transition-colors font-semibold text-lg"
           >
             Get In Touch
             <ArrowRight className="ml-2 h-5 w-5" />

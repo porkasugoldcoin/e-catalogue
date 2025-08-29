@@ -10,12 +10,12 @@ const Products = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-16">
+      <div className="bg-[#2F3A45] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Products</h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Discover our comprehensive suite of business solutions designed to drive growth, 
-            efficiency, and innovation across your organization.
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Hardware Products</h1>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+            Discover our comprehensive range of high-quality hardware solutions including hinges, 
+            bolts, fasteners, brackets, and accessories for all your construction and DIY needs.
           </p>
         </div>
       </div>
@@ -38,7 +38,7 @@ const Products = () => {
                   </div>
                   <div className="md:w-2/3 p-6">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-medium text-blue-600 bg-blue-100 px-3 py-1 rounded-full">
+                      <span className="text-sm font-medium text-[#3B82F6] bg-blue-100 px-3 py-1 rounded-full">
                         {product.name}
                       </span>
                       <div className="flex items-center">
@@ -63,11 +63,10 @@ const Products = () => {
                       </div>
                     </div>
                     
-                    <div className="flex items-center justify-between">
-                      <span className="text-lg font-bold text-gray-900">{product.price}</span>
+                    <div className="flex items-center justify-end">
                       <button
                         onClick={() => openBrochureForm(product.name)}
-                        className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm"
+                        className="inline-flex items-center px-4 py-2 bg-[#3B82F6] text-white rounded-lg hover:bg-[#2563EB] transition-colors font-medium text-sm"
                       >
                         <Download className="h-4 w-4 mr-2" />
                         Download Brochure
@@ -81,13 +80,13 @@ const Products = () => {
         </div>
       </div>
 
-      <div className="bg-blue-600 text-white py-16">
+      <div className="bg-[#2F3A45] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Need a Custom Solution?</h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Our team of experts can create tailored solutions that perfectly match your unique business requirements.
+          <h2 className="text-3xl font-bold mb-4">Need Custom Hardware Solutions?</h2>
+          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+            Our team of hardware experts can provide tailored solutions that perfectly match your specific project requirements.
           </p>
-          <button className="inline-flex items-center px-8 py-3 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-semibold">
+          <button className="inline-flex items-center px-8 py-3 bg-[#3B82F6] text-white rounded-lg hover:bg-[#2563EB] transition-colors font-semibold">
             Contact Our Experts
             <ArrowRight className="ml-2 h-5 w-5" />
           </button>
