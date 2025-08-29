@@ -11,7 +11,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              [Client's Hardware Business Name]
+              Great Hardwares
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
               Trusted supplier of hinges, bolts, and hardware accessories.
@@ -40,7 +40,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              About [Client's Hardware Business Name]
+              About Great Hardwares
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We are a leading supplier of high-quality hardware products, specializing in hinges, bolts, 
@@ -112,7 +112,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose [Client's Hardware Business Name]?
+              Why Choose Great Hardwares?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               We deliver exceptional value through quality products and unmatched customer service.

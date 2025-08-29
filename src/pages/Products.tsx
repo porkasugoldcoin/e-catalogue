@@ -69,7 +69,7 @@ const Products = () => {
                         className="inline-flex items-center px-4 py-2 bg-[#3B82F6] text-white rounded-lg hover:bg-[#2563EB] transition-colors font-medium text-sm"
                       >
                         <Download className="h-4 w-4 mr-2" />
-                        Download Brochure
+                        Download E-Catalogue
                       </button>
                     </div>
                   </div>

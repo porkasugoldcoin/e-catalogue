@@ -41,7 +41,7 @@ const BrochureModal = () => {
     link.click();
     
     // Show success message
-    alert(`${selectedProduct} brochure (${fileName}) download started! In production, this would download the actual PDF file.`);
+    alert(`${selectedProduct} e-catalogue (${fileName}) download started! In production, this would download the actual PDF file.`);
   };
 
   const resetAndClose = () => {
@@ -57,7 +57,7 @@ const BrochureModal = () => {
       <div className="bg-white rounded-xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto">
         <div className="flex items-center justify-between p-6 border-b border-gray-200">
           <h2 className="text-2xl font-bold text-gray-900">
-            {showSuccess ? 'Download Ready' : 'Download Brochure'}
+            {showSuccess ? 'Download Ready' : 'Download E-Catalogue'}
           </h2>
           <button
             onClick={resetAndClose}
@@ -132,7 +132,7 @@ const BrochureModal = () => {
                 type="submit"
                 className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors font-medium"
               >
-                Request Brochure
+                Request E-Catalogue
               </button>
             </form>
           ) : (
@@ -142,17 +142,17 @@ const BrochureModal = () => {
                 Thank you, {formData.name}!
               </h3>
               <p className="text-gray-600">
-                Your brochure request has been processed successfully.
+                Your e-catalogue request has been processed successfully.
               </p>
               <button
                 onClick={handleDownload}
                 className="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
               >
                 <Download className="h-5 w-5 mr-2" />
-                Download {selectedProduct} Brochure
+                Download {selectedProduct} E-Catalogue
               </button>
               <p className="text-xs text-gray-500 mt-2">
-                The brochure will be downloaded to your device
+                The e-catalogue will be downloaded to your device
               </p>
             </div>
           )}

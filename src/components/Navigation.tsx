@@ -15,7 +15,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <Wrench className="h-8 w-8 text-orange-600" />
-              <span className="font-bold text-xl text-gray-900">[Client's Hardware Business Name]</span>
+              <span className="font-bold text-xl text-gray-900">Great Hardwares</span>
             </Link>
           </div>
 
