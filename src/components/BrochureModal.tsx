@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { X, Download, CheckCircle } from 'lucide-react';
-import { useBrochure } from '../context/BrochureContext';
+import { useBrochure } from '../hooks/useBrochure';
 
 interface FormData {
   name: string;
@@ -18,7 +18,7 @@ const BrochureModal = () => {
     productName: selectedProduct
   });
   const [showSuccess, setShowSuccess] = useState(false);
-  const [downloadUrl, setDownloadUrl] = useState('');
+
 
   React.useEffect(() => {
     setFormData(prev => ({ ...prev, productName: selectedProduct }));
@@ -28,9 +28,6 @@ const BrochureModal = () => {
     e.preventDefault();
     
     // Simulate PDF generation and download
-    const pdfFileName = selectedProduct.replace(' ', '') + '.pdf';
-    const mockDownloadUrl = `/downloads/${pdfFileName}`;
-    setDownloadUrl(mockDownloadUrl);
     setShowSuccess(true);
   };
 
@@ -50,7 +47,6 @@ const BrochureModal = () => {
   const resetAndClose = () => {
     setFormData({ name: '', email: '', mobile: '', productName: '' });
     setShowSuccess(false);
-    setDownloadUrl('');
     closeBrochureForm();
   };
 

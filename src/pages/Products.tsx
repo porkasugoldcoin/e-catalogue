@@ -1,7 +1,7 @@
 import React from 'react';
 import { Download, Star, ArrowRight } from 'lucide-react';
-import { useBrochure } from '../context/BrochureContext';
-import { useProducts } from '../context/ProductContext';
+import { useBrochure } from '../hooks/useBrochure';
+import { useProducts } from '../hooks/useProducts';
 import BrochureModal from '../components/BrochureModal';
 
 const Products = () => {

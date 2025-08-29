@@ -7,7 +7,7 @@ interface BrochureContextType {
   closeBrochureForm: () => void;
 }
 
-const BrochureContext = createContext<BrochureContextType | undefined>(undefined);
+export const BrochureContext = createContext<BrochureContextType | undefined>(undefined);
 
 export const BrochureProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [showForm, setShowForm] = useState(false);
@@ -35,10 +35,3 @@ export const BrochureProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   );
 };
 
-export const useBrochure = () => {
-  const context = useContext(BrochureContext);
-  if (!context) {
-    throw new Error('useBrochure must be used within a BrochureProvider');
-  }
-  return context;
-};

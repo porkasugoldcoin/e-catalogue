@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Edit, Trash2, Save, X, Upload, Eye, Download } from 'lucide-react';
-import { useProducts } from '../context/ProductContext';
+import { useProducts } from '../hooks/useProducts';
 import { Product } from '../types/Product';
 
 const Admin = () => {

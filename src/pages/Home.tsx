@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, Users, Award, Zap, Wrench, Shield, Truck, Clock } from 'lucide-react';
+import { ArrowRight, Star, Users, Award, Wrench, Shield, Truck, Clock } from 'lucide-react';
 import BrochureModal from '../components/BrochureModal';
 
 const Home = () => {

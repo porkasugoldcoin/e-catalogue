@@ -9,7 +9,7 @@ interface ProductContextType {
   getProduct: (id: string) => Product | undefined;
 }
 
-const ProductContext = createContext<ProductContextType | undefined>(undefined);
+export const ProductContext = createContext<ProductContextType | undefined>(undefined);
 
 // Default demo products
 const defaultProducts: Product[] = [
@@ -135,10 +135,3 @@ export const ProductProvider: React.FC<{ children: React.ReactNode }> = ({ child
   );
 };
 
-export const useProducts = () => {
-  const context = useContext(ProductContext);
-  if (!context) {
-    throw new Error('useProducts must be used within a ProductProvider');
-  }
-  return context;
-};
