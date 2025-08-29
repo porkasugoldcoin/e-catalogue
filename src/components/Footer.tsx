@@ -22,7 +22,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-green-400 transition-colors"
                 >
-                  💬 WhatsApp: https://wa.me/7010584543
+                  💬 Chat Us
                 </a>
               </div>
             </div>
